@@ -1,0 +1,1 @@
+lua Make.lua && ./build/final demo.nes
