@@ -116,10 +116,10 @@ int main(int argc, char const *argv[])
 
     *c = 3;
     printf("%d",a);
-//   cpu.enableFlag(OVERFLOW_FLAG);
-//   printf("%d %d\n",cpu.getFlag(OVERFLOW_FLAG),cpu.flags);
-//   cpu.disableFlag(OVERFLOW_FLAG);
-//   printf("%d %d\n",cpu.getFlag(OVERFLOW_FLAG),cpu.flags);
+//   enableFlag(OVERFLOW_FLAG);
+//   printf("%d %d\n",cpu.getFlag(OVERFLOW_FLAG),flags);
+//   disableFlag(OVERFLOW_FLAG);
+//   printf("%d %d\n",cpu.getFlag(OVERFLOW_FLAG),flags);
     // printf("%d" ,1<<2);
   return 0;
 }
