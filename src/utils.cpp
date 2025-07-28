@@ -4,11 +4,11 @@
 void
 sendError (const char *error)
 {
-    fprintf (stderr, "ERROR:%s", error);
+    fprintf (stderr, "\n\n\033[31m ERROR:%s \033[0m\n\n", error);
 }
 
-char *
-readFile (const char *filePath, unsigned int *fileLenght)
+unsigned  char *
+readFile (const char *filePath,   int *fileLenght)
 {
     FILE *file = fopen (filePath, "rb");
     if (file == NULL)
@@ -19,9 +19,9 @@ readFile (const char *filePath, unsigned int *fileLenght)
             exit (1);
         }
     fseek (file, 0L, SEEK_END);
-    unsigned int sz = ftell (file) + 1;
+      int sz = ftell (file) + 1;
     fseek (file, 0L, SEEK_SET);
-    char *buffer = (char *)malloc (sz * sizeof (char));
+      unsigned char *buffer = ( unsigned char *)malloc (sz * sizeof (char));
     buffer[sz - 1] = 0;
     fread (buffer, sizeof (char), sz, file);
     fclose (file);

@@ -1,4 +1,4 @@
 #pragma once 
 
 void sendError(const char* error);
-char* readFile(const char* filePath,unsigned int *fileLenght);
+ unsigned char* readFile(const char* filePath,  int *fileLenght);

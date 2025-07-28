@@ -1,0 +1,1 @@
+cl65 --verbose --target nes main.s -o demo1.nes

@@ -1,1 +1,2 @@
-lua Make.lua && ./build/final demo.nes
+rm build/* 
+lua Make.lua && ./build/final 1.Branch_Basics.nes
